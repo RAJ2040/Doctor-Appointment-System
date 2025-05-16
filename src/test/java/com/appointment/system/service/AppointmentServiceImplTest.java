@@ -9,6 +9,7 @@ import com.appointment.system.entity.Patient;
 import com.appointment.system.repository.AppointmentRepository;
 import com.appointment.system.repository.DoctorRepository;
 import com.appointment.system.repository.PatientRepository;
+import com.appointment.system.service.impl.AppointmentServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.*;

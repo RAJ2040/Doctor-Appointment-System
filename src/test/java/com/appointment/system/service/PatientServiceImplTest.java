@@ -3,6 +3,7 @@ package com.appointment.system.service;
 import com.appointment.system.dto.PatientDTO;
 import com.appointment.system.entity.Patient;
 import com.appointment.system.repository.PatientRepository;
+import com.appointment.system.service.impl.PatientServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.*;
