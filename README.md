@@ -94,7 +94,7 @@ http://localhost:8080/swagger-ui.html
 
 SQL Dump
 mysql -u root -p doctor_db < doctor_db.sql
-
+Sample demo Dump file added in folder
 
 Author
 Muthuraj Nadar
