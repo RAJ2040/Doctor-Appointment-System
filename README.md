@@ -2,6 +2,8 @@
 
 A RESTful backend application to manage doctors, patients, and appointments.
 
+---
+
 ## 🚀 Tech Stack
 
 - Java 17
@@ -11,11 +13,12 @@ A RESTful backend application to manage doctors, patients, and appointments.
 - Maven
 - Swagger UI (OpenAPI)
 - JUnit + Mockito
-- Git
+- Docker & Docker Compose
 
 ---
 
 ## 📁 Project Structure
+
 
 com.appointment.system
 │
@@ -69,11 +72,10 @@ POST /appointments
   "appointmentDateTime": "2025-05-17T14:00:00"
 }
 
-Prerequisites
-
+⚙️ Prerequisites (Without Docker)
 Java 17+
 Maven
-MySQL (running on localhost)
+MySQL (running locally)
 
 MySQL Setup
 Create the database: CREATE DATABASE doctor_db;
@@ -91,6 +93,14 @@ mvn test
 
 API Documentation (Swagger):
 http://localhost:8080/swagger-ui.html
+
+🐳 Dockerized Setup
+Build and Run the Full Stack:
+mvn clean package
+docker-compose up --build
+Spring Boot REST API (port 8081)
+MySQL 8.0 (port 3307)
+
 
 SQL Dump
 mysql -u root -p doctor_db < doctor_db.sql
