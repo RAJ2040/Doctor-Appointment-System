@@ -18,15 +18,17 @@ A RESTful backend application to manage doctors, patients, and appointments.
 ## 📁 Project Structure
 
 com.appointment.system
-├── controller # REST Controllers
-├── dto # Data Transfer Objects
-├── entity # JPA Entities
-├── exception # Exception Handling
-├── repository # Spring Data Repositories
-├── service # Service Interfaces
-├── service.impl # Service Implementations
-├── config # Swagger Configuration
-└── Application.java # Spring Boot entry point
+│
+├── controller        → Handles HTTP requests (REST Controllers)
+├── dto              → Data Transfer Objects used between layers
+├── entity           → JPA Entities mapped to database tables
+├── exception        → Custom exceptions and global error handling
+├── repository       → Spring Data JPA Repositories
+├── service          → Service layer interfaces
+├── service.impl     → Implementations of service interfaces
+├── config           → Configuration classes (e.g., Swagger)
+└── Application.java → Main Spring Boot application entry point
+
 
 
 ---
